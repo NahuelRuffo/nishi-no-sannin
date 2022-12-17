@@ -1,0 +1,256 @@
+*{
+	border:0;
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+    color: white;
+    max-width: 1440;
+    font-family: Permanent Marker;
+}
+
+body{
+    background-image: url(../assets/img/fondo.jpg);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.logoNav{
+    padding-right: 3em;
+    font-size: 2em;
+    margin: 0;
+}
+nav{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 4em;
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: nowrap;
+    margin: 0;
+}
+ul a{
+    padding-left: 2em;
+    padding-right: 2em;
+    font-size: 1.5em;
+}
+
+
+.parallax{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/img/imagen\ de\ muestrario.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 95vh;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.texParallax{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10em;
+}
+.texParallax h1{
+    margin-bottom: 1em;
+}
+.texParallax h2{
+    font-size: 6em;
+}
+.parallax .texParallax a{
+    font-size: 1.5em;
+    padding: 0.2em 1.2em 0.2em 1.2em;
+    color: black;
+    background-color: white;
+}
+.parallax .texParallax .botonComAhora:hover a{
+    color: white;
+    background-color: black;
+}
+
+
+
+.coleccion{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 30em;
+}
+
+.colec1{
+    background-image: url(../assets/img/nishi.jpg);
+    background-position: center;
+    object-fit: cover;
+}
+.colec2{
+    background-image: url(../assets/img/hueso.jpg);
+    background-position: center;
+    object-fit: cover;
+}
+.coleccion a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.coleccion h3{
+    margin-top: 2.5em;
+    font-size: 3em;
+}
+.ofertas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 35em;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+    background-size: 56%;
+    background-repeat: no-repeat;
+    background-image: url(../assets/img/gif-index.gif);
+    margin: 6em 0em 6em 0em;
+}
+.boton{
+    background-color: black;
+    padding: 1em 3em 1em 3em;
+}
+.ofertas h3{
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5em;
+}
+.ofertas a{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5em;
+    padding: 0em 0.5em 0em 0.5em;
+    background-color: white;
+    margin-top: 0.8em;
+}
+
+.ofertas .boton div:hover a{
+    color: white;
+    background-color: black;
+}
+
+
+.muestraIndex{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+    align-items: center;
+    object-fit: cover;
+    background-color: hwb(0deg 93% 7%);
+    height: 55em;
+}
+.muestraIndex .muestra{
+    width: auto;
+    height: 20em;
+    margin: 1em 3em 1em 3em;
+    object-fit: cover;
+    flex-wrap: nowrap;
+}
+.muestraIndex img{
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.muestraIndex .imgMuestra:hover img{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 50em;
+    background-attachment: fixed;
+    background-image: url(https://img.freepik.com/fotos-premium/textura-piedra-negra-fondo-pizarra-oscura-vista-superior_88281-1206.jpg?w=2000);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.nishiFooter h2{
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+    font-size: 6em;
+}
+.containerFooter{
+    display: flex;
+    
+}
+footer .containerFooter h3{
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+.containerFooter .direccion{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 6em 0 6em;
+}
+.containerFooter .direccion p{
+    font-size: 1.3em;
+}
+
+.containerFooter .contactos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    padding: 0 7em 0 7em;
+}
+.contactos .cont{
+    display: flex;
+}
+.contactos .cont .inputs{
+    margin-right: 15px;
+}
+.contactos .cont .inputs input{
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+}
+.contactos .cont .mb-3 textarea{
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+}
+
+
+.containerFooter .redes{
+    display: flex;
+    align-items: center;
+    padding: 0 6em 0 6em;
+}
+.containerFooter .redes .svgRedes{
+    display: flex;
+    flex-direction: row;
+}
+.containerFooter .redes .svgRedes svg{
+    margin: 50px 20px 0px 20px;
+}
+footer h4{
+    margin-top: 3em;
+}
