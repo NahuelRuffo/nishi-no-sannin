@@ -8,7 +8,7 @@
     font-family: Permanent Marker;
 }
 
-body{
+.dobyIndex{
     background-image: url(../assets/img/fondo.jpg);
 }
 a{
@@ -16,9 +16,10 @@ a{
     color: white;
 }
 .logoNav{
-    padding-right: 3em;
     font-size: 2em;
     margin: 0;
+    text-decoration: none;
+    width: 500px;
 }
 nav{
     background-color: black;
@@ -38,6 +39,7 @@ ul{
     justify-items: center;
     flex-wrap: nowrap;
     margin: 0;
+    padding: 0px;
 }
 ul a{
     padding-left: 2em;
@@ -47,7 +49,7 @@ ul a{
 
 
 .parallax{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../assets/img/imagen\ de\ muestrario.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../assets/img/imagen\ de\ muestrario.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -68,9 +70,11 @@ ul a{
 }
 .texParallax h1{
     margin-bottom: 1em;
+    text-shadow: 2px 3px #000000;
 }
 .texParallax h2{
     font-size: 6em;
+    text-shadow: 2px 3px #000000;
 }
 .parallax .texParallax a{
     font-size: 1.5em;
@@ -92,12 +96,12 @@ ul a{
 }
 
 .colec1{
-    background-image: url(../assets/img/nishi.jpg);
+    background-color: #ffffff;
     background-position: center;
     object-fit: cover;
 }
 .colec2{
-    background-image: url(../assets/img/hueso.jpg);
+    background-color: #000000;
     background-position: center;
     object-fit: cover;
 }
@@ -108,9 +112,14 @@ ul a{
     align-items: center;
 }
 .coleccion h3{
-    margin-top: 2.5em;
+    
     font-size: 3em;
 }
+
+.coleccion .colec1 h3{
+    color: #000000;
+}
+
 .ofertas{
     display: flex;
     flex-direction: column;
@@ -120,7 +129,7 @@ ul a{
     object-fit: cover;
     background-size: cover;
     background-position: center;
-    background-size: 56%;
+
     background-repeat: no-repeat;
     background-image: url(../assets/img/gif-index.gif);
     margin: 6em 0em 6em 0em;
@@ -186,12 +195,13 @@ footer{
     justify-content: center;
     text-align: center;
     align-items: center;
-    height: 50em;
+    height: auto;
     background-attachment: fixed;
     background-image: url(https://img.freepik.com/fotos-premium/textura-piedra-negra-fondo-pizarra-oscura-vista-superior_88281-1206.jpg?w=2000);
     background-repeat: no-repeat;
-    background-size: 100%;
 }
+
+
 .nishiFooter h2{
     margin-top: 1em;
     margin-bottom: 1.5em;
@@ -254,3 +264,179 @@ footer .containerFooter h3{
 footer h4{
     margin-top: 3em;
 }
+
+
+
+/*Tienda-----------------------------------------------------------------------------*/
+.bodyTienda{    
+    background-color: white;
+}
+.coleccionRegular{
+    padding: 5em;
+    background-image: url(https://img.freepik.com/fotos-premium/textura-piedra-negra-fondo-pizarra-oscura-vista-superior_88281-1206.jpg?w=2000);
+    background-position: center;
+    background-attachment: fixed;
+    object-fit: cover;
+}
+.coleccionRegular h1{
+    font-size: 4em;
+    text-align: center;
+}
+
+.grillaTienda{
+    display: grid;
+    grid-template-columns: repeat(3, 20em);
+    grid-template-rows: repeat(5, 1fr);
+    justify-content: center;
+    row-gap: 9em;
+    column-gap: 5em;
+    margin-top: 9em;
+    margin-bottom: 9em;
+}
+.grillaTienda div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.grillaTienda div p{
+    color: rgb(46, 46, 46);
+    margin: 0;
+}
+.grillaTienda div .tituloGrilla{
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+.grillaTienda div .agregarCarrito{
+    padding: 0.5em 5.1em 0.5em 5.2em;
+    margin-top: 0.5em;
+    background-color: white;
+    margin-left: 2.8em;
+}
+
+.grillaTienda div:hover .agregarCarrito{
+    background-color: rgb(245, 112, 24);
+}
+
+.grillaTienda div .agregarCarrito p{
+    color: white;
+}
+
+.grillaTienda div .precio{
+    font-size: 1.3em;
+}
+.grillaTienda div img{
+    width: 20em;
+    height: 20em;
+}
+.grillaTienda div .imgVistaH{
+    display: none;
+}
+.grillaTienda div:hover .imgVistaH{
+    display: block;
+}
+.grillaTienda div:hover .imgVistaP{
+    display: none;
+}
+
+
+
+
+
+
+
+/*@medias----------------------------------------------------------------------------------------------------*/
+@media (min-width: 360px) and (max-width: 767px){
+
+    nav{
+        width: 100%;
+        font-size: 10px;
+    }
+
+
+    
+    nav ul{
+        padding-left: 0;
+        font-size: 2em;
+    }
+    
+    .logoNav{
+        display: none;
+    }
+
+/*index---------------*/
+    *{
+        font-size: 80%;
+    }
+
+    .texParallax{
+        font-size: 1.1em;
+    }
+
+    .botonComAhora{
+        font-size: 1.5em;
+    }
+
+    .muestraIndex{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .imgMuestra .muestra{
+        width: 40em;
+    }
+
+    .imgMuestra a{
+        width: auto;
+    }
+
+
+
+
+    .bodyTienda{
+        width: 850px;
+    }
+
+
+    .grillaTienda{
+        grid-template-columns: 20em 20em;
+        grid-template-rows: repeat(8, 30em);
+    }
+
+    .footerTienda{
+        background-size: 100%;
+        height: 10em;
+    }
+
+    .nishiFooter{
+        font-size: 1em;
+    }
+
+    footer .containerFooter{
+        flex-direction: column;
+    }
+    
+    footer .containerFooter .direccion{
+        align-items: center;
+        font-size: 2em;
+        padding-bottom: 2.5em;
+    }
+
+    footer .containerFooter .redes{
+        justify-content: space-around;
+    }
+    
+}
+
+.ofertas{
+    background-size: 50em;
+}
+
+.boton h3{
+    font-size: 2em;
+}
+
+.boton a{
+    font-size: 2em;
+}
+
