@@ -112,7 +112,7 @@ ul a{
     align-items: center;
 }
 .coleccion h3{
-    
+
     font-size: 3em;
 }
 
@@ -195,7 +195,7 @@ footer{
     justify-content: center;
     text-align: center;
     align-items: center;
-    height: auto;
+    height: 100%;
     background-attachment: fixed;
     background-image: url(https://img.freepik.com/fotos-premium/textura-piedra-negra-fondo-pizarra-oscura-vista-superior_88281-1206.jpg?w=2000);
     background-repeat: no-repeat;
@@ -370,7 +370,7 @@ footer h4{
     }
 
     .texParallax{
-        font-size: 1.1em;
+        font-size: 1em;
     }
 
     .botonComAhora{
@@ -383,7 +383,7 @@ footer h4{
     }
 
     .imgMuestra .muestra{
-        width: 40em;
+        width: 35em;
     }
 
     .imgMuestra a{
@@ -414,6 +414,7 @@ footer h4{
 
     footer .containerFooter{
         flex-direction: column;
+        width: 100%;
     }
     
     footer .containerFooter .direccion{
@@ -429,7 +430,7 @@ footer h4{
 }
 
 .ofertas{
-    background-size: 50em;
+    background-size: 45em;
 }
 
 .boton h3{
