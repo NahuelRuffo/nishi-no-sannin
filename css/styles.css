@@ -87,7 +87,15 @@ ul a{
     background-color: black;
 }
 
+#carouselExampleFade{
+    height: 60vh;
+    background-color: #ffffff;
+}
 
+#carouselExampleFade .carousel-inner img{
+    height: 60vh;
+    object-fit: cover;
+}
 
 .coleccion{
     display: grid;
@@ -112,12 +120,22 @@ ul a{
     align-items: center;
 }
 .coleccion h3{
-
+    text-align: center;
     font-size: 3em;
 }
 
 .coleccion .colec1 h3{
     color: #000000;
+}
+
+.coleccion .colec1:hover h3{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+.coleccion .colec2:hover h3{
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
 }
 
 .ofertas{
@@ -172,6 +190,7 @@ ul a{
     background-color: hwb(0deg 93% 7%);
     height: 55em;
 }
+
 .muestraIndex .muestra{
     width: auto;
     height: 20em;
@@ -192,13 +211,13 @@ ul a{
 footer{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
     align-items: center;
-    height: 100%;
     background-attachment: fixed;
-    background-image: url(https://img.freepik.com/fotos-premium/textura-piedra-negra-fondo-pizarra-oscura-vista-superior_88281-1206.jpg?w=2000);
+    background-image: url(../assets/img/fondo\ footer.jpg);
     background-repeat: no-repeat;
+    background-color: #000000;
+    object-fit: cover;
+    background-size: 100%;
 }
 
 
@@ -221,6 +240,7 @@ footer .containerFooter h3{
     flex-direction: column;
     align-items: flex-start;
     padding: 0 6em 0 6em;
+    white-space: nowrap;
 }
 .containerFooter .direccion p{
     font-size: 1.3em;
@@ -229,9 +249,10 @@ footer .containerFooter h3{
 .containerFooter .contactos{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: nowrap;
     padding: 0 7em 0 7em;
+
 }
 .contactos .cont{
     display: flex;
@@ -263,6 +284,17 @@ footer .containerFooter h3{
 }
 footer h4{
     margin-top: 3em;
+}
+
+.enviar{
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+
+}
+
+.enviar input{
+    width: 20em;
 }
 
 
@@ -346,6 +378,129 @@ footer h4{
 
 
 /*@medias----------------------------------------------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1023px){
+    nav{
+        width: 100%;
+        font-size: 10px;
+    }
+
+
+    
+    nav ul{
+        padding-left: 0;
+        font-size: 2em;
+    }
+    
+    .logoNav{
+        display: none;
+    }
+
+/*index---------------*/
+    *{
+        font-size: 90%;
+    }
+
+    .texParallax{
+        font-size: 1em;
+    }
+
+    .botonComAhora{
+        font-size: 1.5em;
+    }
+
+    .muestraIndex{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .imgMuestra .muestra{
+        width: 35em;
+    }
+
+    .imgMuestra a{
+        width: auto;
+    }
+
+
+
+
+    .bodyTienda{
+        width: 850px;
+    }
+
+
+    .grillaTienda{
+        grid-template-columns: 20em 20em;
+        grid-template-rows: repeat(8, 30em);
+    }
+
+
+    /*footer-------------------------------------------------------------------------*/
+    .footerTienda{
+        background-size: 100%;
+        height: 10em;
+    }
+
+    .nishiFooter{
+        font-size: 0.9em;
+    }
+
+    footer .containerFooter{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    footer .containerFooter .contactos{
+        align-items: center;
+    }
+    
+    footer .containerFooter .direccion{
+        align-items: center;
+        font-size: 2em;
+        padding-bottom: 2.5em;
+    }
+
+    footer .containerFooter .redes{
+        justify-content: space-around;
+    }
+    
+}
+
+.containerFooter .direccion h3{
+    margin-bottom: 10px;
+}
+
+.ofertas{
+    background-size: 45em;
+}
+
+.boton h3{
+    font-size: 2em;
+}
+
+.boton a{
+    font-size: 2em;
+}
+
+footer{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/fondo\ footer\ movil.jpg);
+}
+
+
+
+
+
+
+
+
 @media (min-width: 360px) and (max-width: 767px){
 
     nav{
@@ -403,13 +558,15 @@ footer h4{
         grid-template-rows: repeat(8, 30em);
     }
 
+
+    /*footer-------------------------------------------------------------------------*/
     .footerTienda{
         background-size: 100%;
         height: 10em;
     }
 
     .nishiFooter{
-        font-size: 1em;
+        font-size: 0.9em;
     }
 
     footer .containerFooter{
@@ -429,6 +586,10 @@ footer h4{
     
 }
 
+.containerFooter .direccion h3{
+    margin-bottom: 10px;
+}
+
 .ofertas{
     background-size: 45em;
 }
@@ -439,5 +600,9 @@ footer h4{
 
 .boton a{
     font-size: 2em;
+}
+
+footer{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/fondo\ footer\ movil.jpg);
 }
 
